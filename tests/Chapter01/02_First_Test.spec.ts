@@ -16,4 +16,3 @@ test('My First Playwright TypeScript Test', async ({ page }) => {
     // Validate web page title 
     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
 })
-
