@@ -17,10 +17,10 @@ export default defineConfig({
   // globalTimeout : 60 * 60 * 1000,
 
   // Test timeout
-  timeout : 2 * 60 * 1000,
+  timeout: 2 * 60 * 1000,
   // Assertion timeout
-  expect : { 
-    timeout : 40000
+  expect: {
+    timeout: 40000
   },
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -31,18 +31,24 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['list'],
+    //['dot'],
+    ['json', { outputFile: 'json-test-report.json' }],
+    ['junit', { outputFile: 'junit-test-report.xml' }],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    
-    testIdAttribute : 'data-tab-item',
-    screenshot : 'on',
-    headless : false,
+
+    testIdAttribute: 'data-tab-item',
+    screenshot: 'on',
+    headless: false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    actionTimeout : 40000,
+    actionTimeout: 40000,
   },
 
   /* Configure projects for major browsers */
@@ -79,8 +85,10 @@ export default defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], 
-        channel: 'chrome', viewport: { width: 1440, height: 900 }}
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome', viewport: { width: 1440, height: 900 }
+      }
     },
   ],
 
