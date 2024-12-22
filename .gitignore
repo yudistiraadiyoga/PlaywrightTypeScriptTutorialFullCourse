@@ -7,3 +7,4 @@ node_modules/
 /junit-test-report.xml
 /allure-report
 /allure-results
+/.DS_Store
