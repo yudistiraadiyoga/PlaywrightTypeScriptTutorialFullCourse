@@ -5,3 +5,5 @@ node_modules/
 /playwright/.cache/
 /json-test-report.json
 /junit-test-report.xml
+/allure-report
+/allure-results
