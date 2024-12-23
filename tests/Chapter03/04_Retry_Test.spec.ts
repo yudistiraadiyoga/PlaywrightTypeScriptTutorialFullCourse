@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('My First Playwright TypeScript Test 1',{tag :['@SmokeTesting']}, async ({ page }) => {
     // Go to URL
     await page.goto('https://www.google.com/');
@@ -15,4 +17,4 @@ test('My First Playwright TypeScript Test 1',{tag :['@SmokeTesting']}, async ({ 
 
     // Validate web page title 
     await expect(page).toHaveTitle('Playwright TypeScript by Testers Talk☑️ - YouTube');
-})
+});

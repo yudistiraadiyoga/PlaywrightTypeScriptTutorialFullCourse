@@ -1,5 +1,5 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 // Write a test
 test('Mouse actions in playwright', async ({ page }) => {
@@ -20,5 +20,5 @@ test('Mouse actions in playwright', async ({ page }) => {
 
     // Double click
     // await page.getByLabel('Search by voice').dblclick();
-})
+});
 

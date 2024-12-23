@@ -1,5 +1,5 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 test.beforeAll(async() => {
     console.log(`Running before all tests...`);
@@ -18,7 +18,9 @@ test.afterAll(async() => {
     console.log(`Running after all tests...`);
 });
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Test 1', async ({ page }) => {
     console.log('Test1 execution started...');
     // Go to URL
@@ -33,9 +35,11 @@ test('Test 1', async ({ page }) => {
 
     // Validate web page title 
     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-})
+});
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Test 2', async ({ page }) => {
     console.log('Test2 execution started...');
     // Go to URL
@@ -50,4 +54,4 @@ test('Test 2', async ({ page }) => {
 
     // Validate web page title 
     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-})
+});

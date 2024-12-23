@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Visual Comparison in Playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://github.com/login');
@@ -15,7 +17,9 @@ test('Visual Comparison in Playwright', async ({ page }) => {
     //await expect(page).toHaveScreenshot('GitHubLoginPage.png');
 })
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Element Visual Comparison in Playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://github.com/login');
@@ -29,4 +33,4 @@ test('Element Visual Comparison in Playwright', async ({ page }) => {
     // Compare element screnshots
     await page.locator('#login_field').fill('playwright with typescript')
     //await expect(element).toHaveScreenshot('GitHubLoginForm.png');
-})
+});

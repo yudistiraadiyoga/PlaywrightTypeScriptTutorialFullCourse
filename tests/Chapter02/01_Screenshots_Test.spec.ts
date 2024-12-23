@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Capture screenshots in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.youtube.com/@testerstalk');
@@ -15,5 +17,5 @@ test('Capture screenshots in playwright', async ({ page }) => {
     // Full page screenshot
     await page.screenshot({path :'./screenshots/FullPageScreenshot.png', fullPage:true});
 
-})
+});
 

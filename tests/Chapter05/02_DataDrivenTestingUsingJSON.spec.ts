@@ -1,5 +1,5 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 import testData from '../../test-data/qa/testdata.json';
 
 type TestData = {
@@ -14,6 +14,9 @@ type TestData = {
 }
 const typedTestData = testData as TestData;
 
+/**
+ * Author Testers Talk
+ */
 for (const dataSetName in typedTestData) {
 
     const skill = typedTestData[dataSetName as keyof TestData];
@@ -31,7 +34,7 @@ for (const dataSetName in typedTestData) {
 
         // Validate web page title 
         await expect(page).toHaveTitle(skill.Skill2 + '☑️ - YouTube');
-    })
+    });
 }
 
 

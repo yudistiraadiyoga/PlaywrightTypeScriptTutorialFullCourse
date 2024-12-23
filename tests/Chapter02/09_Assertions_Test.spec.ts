@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Assertions in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.youtube.com/');
@@ -25,6 +27,6 @@ test('Assertions in playwright', async ({ page }) => {
     await expect(page.locator('span[id="title"]')).toHaveCount(4);
 
     //await expect(page.locator('span[id="title"]')).toBeDisabled();
-})
+});
 
 

@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Soft Assertions in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.youtube.com/');
@@ -23,6 +25,6 @@ test('Soft Assertions in playwright', async ({ page }) => {
     await expect(page.locator('span[id="title"]').first()).toHaveText('Latest posts from Testers Talk');
 
     await expect(page.locator('span[id="title"]')).toHaveCount(4);
-})
+});
 
 

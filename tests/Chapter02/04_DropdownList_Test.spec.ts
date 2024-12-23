@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Handling Dropdown list in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.facebook.com/');
@@ -15,5 +17,5 @@ test('Handling Dropdown list in playwright', async ({ page }) => {
 
     // Validate all the options
     await expect(page.locator('#month > option')).toHaveText(['Jan', 'Feb', 'Mar','Apr', 'May', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
-})
+});
 

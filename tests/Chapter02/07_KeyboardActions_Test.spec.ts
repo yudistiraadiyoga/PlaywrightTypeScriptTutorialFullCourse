@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Keyboard actions in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.google.com/');
@@ -20,5 +22,5 @@ test('Keyboard actions in playwright', async ({ page }) => {
     await page.getByLabel('Search', {exact : true}).first().click();
     await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');
-})
+});
 

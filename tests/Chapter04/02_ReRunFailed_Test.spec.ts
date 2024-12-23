@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Test 1', async ({ page }) => {
     // Go to URL
     await page.goto('https://www.google.com/');
@@ -15,14 +17,18 @@ test('Test 1', async ({ page }) => {
 
     // Validate web page title 
     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-})
+});
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Test 2', async ({ page }) => {
    expect(true).toBe(false);
-})
+});
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Test 3', async ({ page }) => {
     expect(true).toBe(false);
-})
+});

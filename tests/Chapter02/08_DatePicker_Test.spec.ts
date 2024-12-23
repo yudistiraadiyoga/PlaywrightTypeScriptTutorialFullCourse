@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Selecting date value in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://jqueryui.com/datepicker/');
@@ -23,6 +25,6 @@ test('Selecting date value in playwright', async ({ page }) => {
     await iframe.locator('[id="datepicker"]').click();
     await iframe.locator('[title="Next"]').click();
     await iframe.locator('text="15"').click();
-})
+});
 
 

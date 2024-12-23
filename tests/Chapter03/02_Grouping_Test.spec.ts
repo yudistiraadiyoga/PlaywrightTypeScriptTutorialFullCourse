@@ -1,6 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
+/**
+ * Author Testers Talk
+ */
 test.describe('SmokeTesting', () => {
     // Write a test
     test('Test 1', async ({ page }) => {
@@ -16,9 +19,12 @@ test.describe('SmokeTesting', () => {
 
         // Validate web page title 
         await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-    })
+    });
 });
 
+/**
+ * Author Testers Talk
+ */
 test.describe('RegressionTesting', () => {
     // Write a test
     test('Test 2', async ({ page }) => {
@@ -34,7 +40,7 @@ test.describe('RegressionTesting', () => {
 
         // Validate web page title 
         await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-    })
+    });
 
     // Write a test
     test('Test 3', async ({ page }) => {
@@ -50,5 +56,5 @@ test.describe('RegressionTesting', () => {
 
         // Validate web page title 
         await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
-    })
+    });
 });

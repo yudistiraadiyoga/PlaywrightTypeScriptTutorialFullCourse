@@ -1,8 +1,8 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 /**
- * Testers Talk
+ * Author Testers Talk
  */
 test('Read ENV file config in playwright', async ({ page }) => {
     // Go to URL
@@ -17,4 +17,4 @@ test('Read ENV file config in playwright', async ({ page }) => {
 
     // Validate web page title 
     await expect(page).toHaveTitle(`${process.env.SEARCH_KEYWORDS}`+'☑️ - YouTube');
-})
+});

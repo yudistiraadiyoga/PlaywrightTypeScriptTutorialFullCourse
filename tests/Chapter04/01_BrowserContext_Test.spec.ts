@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Multiple browser/tabs in Playwright TypeScript', async ({ page, browser }) => {
     // Go to URL
     await page.goto('https://www.google.com/');
@@ -41,4 +43,4 @@ test('Multiple browser/tabs in Playwright TypeScript', async ({ page, browser })
     // Search with keywords
     await newTab.getByLabel('Search', { exact: true }).fill('playwright by testers talk');
     await newTab.getByLabel('Search', { exact: true }).press('Enter');
-})
+});

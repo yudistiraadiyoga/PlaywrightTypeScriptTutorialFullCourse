@@ -1,8 +1,8 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 /**
- * Testers Talk
+ * Author Testers Talk
  */
 test('Get Text & Get attribute value in playwright', async ({ page }) => {
     // Go to URL
@@ -17,4 +17,4 @@ test('Get Text & Get attribute value in playwright', async ({ page }) => {
     // Get attribute value
     const attributeValue = await page.getByTestId('repositories').first().getAttribute('data-selected-links');
     console.log(`Attribute value is : ${attributeValue}`);
-})
+});

@@ -1,8 +1,8 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 /**
- * Testers Talk
+ * Author Testers Talk
  */
 test('Working with checkbox & radion buttons in playwright', async ({ page }) => {
     // Go to URL
@@ -18,4 +18,4 @@ test('Working with checkbox & radion buttons in playwright', async ({ page }) =>
 
     // Validate radio button or checkbox checked
     await expect(iframe.locator('[for="radio-1"]')).toBeChecked();
-})
+});

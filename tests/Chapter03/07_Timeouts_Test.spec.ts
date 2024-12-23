@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Timeouts in Playwright ', async ({ page }) => {
     test.setTimeout(1 * 60 * 1000);
     // Go to URL
@@ -18,4 +20,4 @@ test('Timeouts in Playwright ', async ({ page }) => {
     await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube', {timeout : 5000});
 
    // await page.waitForTimeout(60000);
-})
+});

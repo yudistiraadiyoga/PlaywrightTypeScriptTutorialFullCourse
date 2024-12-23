@@ -1,11 +1,13 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 const searchKeywords = ['Playwright by Testers Talk', 'Cypress by Testers Talk', 'API Testing by Testers Talk']
 
 for (const searchKeyword of searchKeywords) {
 
-    // Write a test
+    /**
+    * Author Testers Talk
+    */
     test(`Parameterize Tests in Playwright ${searchKeyword}`, async ({ page }) => {
         // Go to URL
         await page.goto('https://www.google.com/');
@@ -18,6 +20,6 @@ for (const searchKeyword of searchKeywords) {
         await page.getByRole('link', { name: searchKeyword }).first().click();
 
         // Validate web page title 
-        await expect(page).toHaveTitle(searchKeyword+'☑️ - YouTube');
-    })
+        await expect(page).toHaveTitle(searchKeyword + '☑️ - YouTube');
+    });
 }

@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Handling Iframes, Drag and Drop element in playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://jqueryui.com/droppable/');
@@ -13,5 +15,5 @@ test('Handling Iframes, Drag and Drop element in playwright', async ({ page }) =
     const dropElement = iframe.locator('[id="droppable"]');
 
     await dragElement.dragTo(dropElement);
-})
+});
 

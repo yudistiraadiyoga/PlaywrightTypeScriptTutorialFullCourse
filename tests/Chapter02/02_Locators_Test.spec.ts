@@ -1,7 +1,9 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
-// Write a test
+/**
+ * Author Testers Talk
+ */
 test('Locators in Playwright', async ({ page }) => {
     // Go to URL
     await page.goto('https://github.com/BakkappaN/');
@@ -29,5 +31,5 @@ test('Locators in Playwright', async ({ page }) => {
     // GetByTitle
     await page.goto('https://www.google.com/');
     await page.getByTitle('Search').fill('playwright javascript by testers talk');
-})
+});
 

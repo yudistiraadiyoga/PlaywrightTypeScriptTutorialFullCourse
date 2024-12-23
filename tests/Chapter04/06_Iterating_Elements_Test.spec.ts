@@ -1,8 +1,8 @@
 // Import playwright module
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 /**
- * Testers Talk
+ * Author Testers Talk
  */
 test('Iterating matching elements in playwright', async ({ page }) => {
     // Go to URL
@@ -32,4 +32,4 @@ test('Iterating matching elements in playwright', async ({ page }) => {
         const text = await repositoryLinks2.nth(index).textContent();
         console.log(`Text from 3rd for loop: ${text}`);
     }
-})
+});

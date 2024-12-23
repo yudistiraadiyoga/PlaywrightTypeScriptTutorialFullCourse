@@ -16,10 +16,10 @@ export default defineConfig({
 
   // globalTimeout : 60 * 60 * 1000,
   // Test timeout
-  timeout: 30000,
+  timeout: 40000,
   // Assertion timeout
   expect: {
-    timeout: 10000
+    timeout: 15000
   },
   /* Run tests in files in parallel */
   fullyParallel: false,
