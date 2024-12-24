@@ -8,3 +8,4 @@ node_modules/
 /allure-report
 /allure-results
 /.DS_Store
+/test-data/.DS_Store
