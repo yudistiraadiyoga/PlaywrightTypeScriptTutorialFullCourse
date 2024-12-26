@@ -44,12 +44,16 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     testIdAttribute: 'data-tab-item',
-    video : 'off',
+    video: 'off',
     screenshot: 'on',
     headless: false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
     actionTimeout: 40000,
+
+    // launchOptions: {
+    //   args: ['--start-maximized']
+    // },
   },
 
   /* Configure projects for major browsers */
@@ -88,7 +92,8 @@ export default defineConfig({
       name: 'Google Chrome',
       use: {
         ...devices['Desktop Chrome'],
-        channel: 'chrome', viewport: { width: 1440, height: 900 }
+        channel: 'chrome',
+        viewport : { width: 1440, height:900 },
       }
     },
   ],
