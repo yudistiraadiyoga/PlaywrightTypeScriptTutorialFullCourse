@@ -5,7 +5,7 @@ import { ResultPage } from '../../src/pages/ResultPage';
 import { PlaylistPage } from '../../src/pages/PlaylistPage';
 
 /**
- * Testers Talk
+ * author Testers Talk
  */
 test('Page Object Model Test in Playwright', async ({ page }) => {
 
