@@ -56,6 +56,9 @@ export default defineConfig({
     // },
   },
 
+  // globalSetup: require.resolve('./globals/global-setup'),
+  // globalTeardown: require.resolve('./globals/global-teardown'),
+
   /* Configure projects for major browsers */
   projects: [
     // {
@@ -94,6 +97,7 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         channel: 'chrome',
         viewport : { width: 1440, height:900 },
+        //storageState: '/storage-state/StorageState.json' 
       }
     },
   ],

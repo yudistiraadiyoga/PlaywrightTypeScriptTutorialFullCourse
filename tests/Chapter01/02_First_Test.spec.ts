@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * Testers Talk
+ * Author Testers Talk
  */
 test('My First Playwright TypeScript Test', async ({ page }) => {
     // Go to URL
