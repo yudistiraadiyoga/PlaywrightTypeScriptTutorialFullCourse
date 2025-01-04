@@ -1,4 +1,4 @@
-### Playwright with TypeScript Full Course Playlist - Coming soon..
+### - Playwright with TypeScript Full Course Playlist - Coming soon..
 
 ### Playwright with JavaScript UI Automation Full Course Playlist - https://bit.ly/playwright-tutorial-automation-testing
 ### Playwright with JavaScript API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
