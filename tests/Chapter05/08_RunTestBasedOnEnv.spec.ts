@@ -19,4 +19,8 @@ test('Optimized Page Object Model Test in Playwright', async ({ page, homePage, 
     console.log(`Skill : ${String(testData.Module1TestData?.Skill1)}`);
     console.log(`Skill : ${String(testData.Module1TestData?.Skill2)}`);
     console.log(`Skill : ${String(testData.Module1TestData?.Skill3)}`);
+    console.log(`Skill : ${String(testData.Module1TestData?.Skill4)}`);
+    console.log(`Skill : ${String(testData.Module1TestData?.Skill5)}`);
+    console.log(`Skill : ${String(testData.Module1TestData?.Skill6)}`);
+    console.log(`Skill : ${String(testData.Module1TestData?.Skill7)}`);
 });
