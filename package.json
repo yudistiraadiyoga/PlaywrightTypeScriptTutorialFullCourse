@@ -2,7 +2,14 @@
   "name": "playwrighttypescripttutorialfullcourse",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "DataDrivenTesting": "npx playwright test --grep @DataDrivenTesting",
+    "Suite": "npx playwright test --grep \"@SmokeTesting|@RegressionTesting\"",
+    "SmokeTesting": "npx playwright test --grep @SmokeTesting",
+    "RegressionTesting": "npx playwright test --grep @RegressionTesting",
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

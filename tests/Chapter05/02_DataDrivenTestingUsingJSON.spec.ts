@@ -31,7 +31,7 @@ for (const dataSetName in typedTestData) {
 
     const skill = typedTestData[dataSetName as keyof TestData];
 
-    test(`Data Driven Testing Using JSON file in playwright : ${skill.Skill2}`, async ({ page }) => {
+    test(`Data Driven Testing Using JSON file in playwright : ${skill.Skill2}`, { tag: ['@DataDrivenTesting'] }, async ({ page }) => {
 
         console.log(`Data set name : ${dataSetName}`);
         console.log(`Skill : ${skill.Skill1}`);

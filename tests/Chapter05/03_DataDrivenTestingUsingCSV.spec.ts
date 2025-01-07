@@ -23,12 +23,12 @@ const records = parse(
  */
 for (const record of records) {
 
-    test(`Data Driven Testing Using CSV file in playwright : ${record.Skill1}`, async ({ page }) => {
-        
+    test(`Data Driven Testing Using CSV file in playwright : ${record.Skill1}`, { tag: ['@DataDrivenTesting'] }, async ({ page }) => {
+
         console.log(`CSV file row data`);
         console.log(`Skill 1 : ${record.Skill1}`);
         console.log(`Skill 2 : ${record.Skill2}`);
-        
+
         // Go to URL
         await page.goto('https://www.google.com/');
 

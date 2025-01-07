@@ -12,12 +12,12 @@ const records = readExcelFile(filePath);
  */
 for (const record of records) {
 
-    test(`Data Driven Testing Using Excel file in playwright : ${record.Skill2}`, async ({ page }) => {
-        
+    test(`Data Driven Testing Using Excel file in playwright : ${record.Skill2}`, { tag: ['@DataDrivenTesting'] }, async ({ page }) => {
+
         console.log(`Excel file row data`);
         console.log(`Skill 1 : ${record.Skill1}`);
         console.log(`Skill 2 : ${record.Skill2}`);
-        
+
         // Go to URL
         await page.goto('https://www.google.com/');
 
