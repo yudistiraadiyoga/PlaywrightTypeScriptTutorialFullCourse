@@ -4,7 +4,7 @@
 - Playwright with TypeScript Full Course Playlist - https://youtube.com/playlist?list=PLUeDIlio4THEXmQxNvKmdDxAVloGTHXMr&feature=shared
 ===============================================================================================
 
-# Learn Playwright with JavaScript from Scratch
+# [Learn Playwright with JavaScript from Scratch](https://www.youtube.com/watch?v=2poXBtifpzA)
 [![Watch the video](https://img.youtube.com/vi/2poXBtifpzA/hqdefault.jpg)](https://www.youtube.com/watch?v=2poXBtifpzA)
 
 - Playwright with JavaScript UI Automation Full Course Playlist - https://bit.ly/playwright-tutorial-automation-testing
@@ -16,7 +16,7 @@
 - Playwright API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
 ================================================================================================
 
-# Learn Playwright with Azure DevOps Pipeline
+# [Learn Playwright with Azure DevOps Pipeline](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 [![Watch the video](https://img.youtube.com/vi/Exx2M5Pz06g/hqdefault.jpg)](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 
 - Playwright with Azure DevOps Pipeline Playlist - https://bit.ly/playwright-azure-devops-tutorial
