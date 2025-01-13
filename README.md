@@ -14,7 +14,7 @@
 [![Watch the video](https://img.youtube.com/vi/lM-lqPun9P8/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8)
 
 - Playwright API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
-  ================================================================================================
+================================================================================================
 
 # Learn Playwright with Azure DevOps Pipeline
 [![Watch the video](https://img.youtube.com/vi/Exx2M5Pz06g/hqdefault.jpg)](https://www.youtube.com/watch?v=Exx2M5Pz06g)
