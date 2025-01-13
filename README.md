@@ -20,7 +20,7 @@
 [![Watch the video](https://img.youtube.com/vi/Exx2M5Pz06g/hqdefault.jpg)](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 
 - Playwright with Azure DevOps Pipeline Playlist - https://bit.ly/playwright-azure-devops-tutorial
-- ================================================================================================
+================================================================================================
 
 - Playwright with Dynamics 365 CRM Application Testing - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 
