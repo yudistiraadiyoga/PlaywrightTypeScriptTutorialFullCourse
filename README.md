@@ -1,7 +1,11 @@
-# You can start learning from below video
+# You can start learning Playwright with TypeScript from below video
   [![Watch the video](https://img.youtube.com/vi/788GvvcfwTY/hqdefault.jpg)](https://www.youtube.com/watch?v=788GvvcfwTY)
   
 - Playwright with TypeScript Full Course Playlist - https://youtube.com/playlist?list=PLUeDIlio4THEXmQxNvKmdDxAVloGTHXMr&feature=shared
+
+# You can start learning Playwright with JavaScript from below video
+https://img.youtube.com/vi/2poXBtifpzA/hqdefault.jpg
+
 - Playwright with JavaScript UI Automation Full Course Playlist - https://bit.ly/playwright-tutorial-automation-testing
 
 - Playwright with JavaScript API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
