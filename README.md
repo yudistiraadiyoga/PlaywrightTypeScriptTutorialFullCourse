@@ -10,7 +10,7 @@
 - Playwright with JavaScript UI Automation Full Course Playlist - https://bit.ly/playwright-tutorial-automation-testing
 ================================================================================================
 
-# Learn Playwright with API Automation Testing from Scratch
+# [Learn Playwright with API Automation Testing from Scratch] (https://youtu.be/lM-lqPun9P8?feature=shared)
 [![Watch the video](https://img.youtube.com/vi/lM-lqPun9P8/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8)
 
 - Playwright API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
