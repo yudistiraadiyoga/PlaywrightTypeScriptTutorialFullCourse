@@ -1,9 +1,18 @@
 pipeline {
     agent any
 
-    environment {
-        // Define any environment variables here (e.g., for Node version, etc.)
-        NODE_VERSION = '16.0.0' // specify your preferred Node version
+    tools {
+        nodejs 'Node 16.0.0'
+    }
+
+    stages {
+        stage('Verify Node.js Version') {
+            steps {
+                script {
+                    sh 'node -v'  // Prints Node.js version
+                }
+            }
+        }
     }
 
     stages {
