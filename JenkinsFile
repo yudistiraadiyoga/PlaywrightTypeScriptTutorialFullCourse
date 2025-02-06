@@ -5,17 +5,16 @@ pipeline {
         nodejs 'Node 16.x'
     }
 
+
     stages {
-        stage('Verify Node.js Version') {
+         stage('Verify Node.js Version') {
             steps {
                 script {
                     sh 'node -v'  // Prints Node.js version
                 }
             }
         }
-    }
 
-    stages {
         stage('Checkout Code') {
             steps {
                 // Checkout the code from Git repository
