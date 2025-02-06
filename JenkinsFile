@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define any environment variables here (e.g., for Node version, etc.)
+        NODE_VERSION = '16.0.0' // specify your preferred Node version
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                // Checkout the code from Git repository
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    // Install Node.js using a specific version (set by the environment variable)
+                    def nodeInstall = tool name: 'NodeJS', type: 'NodeJSInstallation'
+                    env.PATH = "${nodeInstall}/bin:${env.PATH}"
+
+                    // Install dependencies from package.json
+                    sh 'npm install'
+                }
+            }
+        }
+
+        stage('Run Playwright Tests') {
+            steps {
+                script {
+                    // Run Playwright tests using Playwright Test
+                    // You can also use other runners like Jest if needed
+                    sh 'npx playwright test --grep SmokeTesting'
+
+                    // Optionally, you can pass arguments to control test execution
+                    // sh 'npx playwright test --project=firefox'
+                }
+            }
+        }
+
+    }
+
+    post {
+        always {
+            // Clean up actions (if needed)
+            cleanWs()
+        }
+        success {
+            // Success message
+            echo 'Playwright tests executed successfully!'
+        }
+        failure {
+            // Failure message
+            echo 'Playwright tests failed.'
+        }
+    }
+}
