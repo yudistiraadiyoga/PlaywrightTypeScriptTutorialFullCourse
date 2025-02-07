@@ -15,7 +15,7 @@ test.use({
 /**
  * Author Testers Talk
  */
-test('Create DELETE API Request using playwright & typescript', async ({ request }) => {
+test('Create DELETE API Request using playwright & typescript',{tag :['@PlaywrightWithJenkins']}, async ({ request }) => {
 
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();

@@ -16,10 +16,10 @@ export default defineConfig({
 
   // globalTimeout : 60 * 60 * 1000,
   // Test timeout
-  timeout: 40000,
+  timeout: 1 * 60 * 1000,
   // Assertion timeout
   expect: {
-    timeout: 15000
+    timeout: 30000
   },
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -46,10 +46,10 @@ export default defineConfig({
     testIdAttribute: 'data-tab-item',
     video: 'off',
     screenshot: 'on',
-    headless: false,
+    headless: true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    actionTimeout: 40000,
+    actionTimeout: 45000,
 
     // launchOptions: {
     //   args: ['--start-maximized']
