@@ -2,7 +2,8 @@
   [![Watch the video](https://img.youtube.com/vi/788GvvcfwTY/hqdefault.jpg)](https://www.youtube.com/watch?v=788GvvcfwTY)
 # [Learn Playwright with TypeScript from Scratch Part-02](https://www.youtube.com/watch?v=YfRazDhi9Fw)
   [![Watch the video](https://img.youtube.com/vi/YfRazDhi9Fw/hqdefault.jpg)](https://www.youtube.com/watch?v=YfRazDhi9Fw)
-  
+# [Learn Playwright with TypeScript from Scratch Part-03](https://www.youtube.com/watch?v=iGQ-qTLEPLw)
+  [![Watch the video](https://img.youtube.com/vi/iGQ-qTLEPLw/hqdefault.jpg)](https://www.youtube.com/watch?v=iGQ-qTLEPLw)
 - Playwright with TypeScript Full Course Playlist - https://youtube.com/playlist?list=PLUeDIlio4THEXmQxNvKmdDxAVloGTHXMr&feature=shared
 ===============================================================
 
