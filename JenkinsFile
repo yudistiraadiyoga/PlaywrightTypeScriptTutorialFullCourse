@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        // Set the path to NodeJS if needed
-        PATH = "/usr/local/bin:$PATH"
+        // Reference the NodeJS installation by the name you gave it in Jenkins
+        NODE_HOME = tool name: 'NodeJS', type: 'NodeJSInstallation'
     }
     stages {
         stage('Checkout') {
@@ -14,8 +14,7 @@ pipeline {
             steps {
                 script {
                     // Use NodeJS tool configured in Jenkins
-                    def nodeHome = tool name: 'NodeJS', type: 'NodeJSInstallation'
-                    env.PATH = "${nodeHome}/bin:${env.PATH}"
+                    env.PATH = "${NODE_HOME}/bin:${env.PATH}"
                     sh 'npm install'  // Install dependencies from package.json
                 }
             }
