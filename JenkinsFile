@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+    environment {
+        // Set the path to NodeJS if needed
+        PATH = "/usr/local/bin:$PATH"
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/BakkappaN/PlaywrightTypeScriptTutorialFullCourse.git'  
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    // Use NodeJS tool configured in Jenkins
+                    def nodeHome = tool name: 'NodeJS', type: 'NodeJSInstallation'
+                    env.PATH = "${nodeHome}/bin:${env.PATH}"
+                    sh 'npm install'  // Install dependencies from package.json
+                }
+            }
+        }
+        stage('Run Playwright Tests') {
+            steps {
+                script {
+                    // Run the Playwright tests
+                    sh 'npx playwright install'
+                    sh 'npx playwright test --grep PlaywrightWithJenkins'
+                }
+            }
+        }
+    }
+    post {
+        always {
+            // Clean up or actions after tests are done
+        }
+    }
+}
