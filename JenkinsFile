@@ -30,9 +30,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // Clean up or actions after tests are done
-        }
-    }
 }
