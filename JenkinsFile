@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // Use NodeJS tool configured in Jenkins
                     //env.PATH = "${NODE_HOME}/bin:${env.PATH}"
-                    //sh 'npm install'  // Install dependencies from package.json
+                    sh 'npm install -g'  // Install dependencies from package.json
                     sh 'npx playwright install'
                 }
             }
