@@ -1,32 +1,52 @@
 pipeline {
     agent any
-        environment {
-           NODE_HOME = tool name: 'nodejs-latest', type: 'NodeJSInstallation'
-        }
+
+    environment {
+        NODE_HOME = tool name: 'nodejs', type: 'NodeJS'
+        PATH = "${NODE_HOME}/bin:${env.PATH}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/BakkappaN/PlaywrightTypeScriptTutorialFullCourse.git'  
+                checkout scm
             }
         }
         stage('Install Dependencies') {
             steps {
                 script {
-                    // Use NodeJS tool configured in Jenkins
-                    //env.PATH = "${NODE_HOME}/bin:${env.PATH}"
-                    sh 'npm install -g'  // Install dependencies from package.json
-                    sh 'npx playwright install'
+                    // Ensure you use Node 16 or higher for Playwright
+                    sh 'npm ci'
                 }
             }
         }
         stage('Run Playwright Tests') {
             steps {
                 script {
-                    // Run the Playwright tests
-                   // sh 'npx playwright install'
-                    sh 'npx playwright test --grep PlaywrightWithJenkins'
+                    // Run Playwright tests
+                    sh 'npx playwright test --grep PlaywrightWithJenkins'  // You can specify browsers or configurations
                 }
             }
+        }
+        stage('Cleanup') {
+            steps {
+                script {
+                    // Clean up if needed, like removing temp files
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Ensure Playwright is cleaned up after the tests, even if they fail
+            cleanWs()
+        }
+        success {
+            echo 'Tests passed successfully!'
+        }
+        failure {
+            echo 'Tests failed!'
         }
     }
 }
