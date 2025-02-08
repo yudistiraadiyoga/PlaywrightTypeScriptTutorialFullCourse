@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    //environment {
-     //   NODE_HOME = tool name: 'nodejs-latest', type: 'NodeJSInstallation'
-   // }
+        environment {
+           NODE_HOME = tool name: 'nodejs-latest', type: 'NodeJSInstallation'
+        }
     stages {
         stage('Checkout') {
             steps {
