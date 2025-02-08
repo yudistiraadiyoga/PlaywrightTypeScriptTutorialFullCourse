@@ -21,7 +21,7 @@ pipeline {
         stage('Run Playwright Tests') {
             steps {
                 // Run Playwright tests using npx
-                sh 'npx playwright test --grep @PlaywrightWithJenkins'  // You can specify browsers or configurations
+                sh 'npx playwright test --grep PlaywrightWithJenkins'  // You can specify browsers or configurations
             }
         }
         stage('Cleanup') {
