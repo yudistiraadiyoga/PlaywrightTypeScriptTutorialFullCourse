@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         // Reference the NodeJS installation by the name you gave it in Jenkins
-        NODE_HOME = tool name: 'NodeJS', type: 'NodeJSInstallation'
+        NODE_HOME = tool name: 'NodeJS', type: 'NodeJS installations'
     }
     stages {
         stage('Checkout') {
