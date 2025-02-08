@@ -32,19 +32,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Ensure workspace is cleaned up after the tests, even if they fail
-            node {
-                cleanWs()
-            }
-        }
-        success {
-            echo 'Tests passed successfully!'
-        }
-        failure {
-            echo 'Tests failed!'
-        }
-    }
 }
