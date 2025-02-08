@@ -1,22 +1,22 @@
 pipeline {
     agent any
 
-    environment {
-        NODE_HOME = tool name: 'plwnodejs', type: 'NodeJS'
-        PATH = "${NODE_HOME}/bin:${env.PATH}"
-    }
-
     stages {
         stage('Checkout') {
             steps {
                 checkout scm
             }
         }
+
+    stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+                sh 'npx playwright install --with-deps'
+            }
+        }
         
         stage('Run Playwright Tests') {
             steps {
-                // Run Playwright tests using npx
-                sh 'npx playwright install' 
                 sh 'npx playwright test --grep PlaywrightWithJenkins'  // You can specify browsers or configurations
             }
         }
