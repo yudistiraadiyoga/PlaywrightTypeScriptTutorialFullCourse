@@ -21,7 +21,7 @@ pipeline {
         stage('Run Playwright Tests') {
             steps {
                 // Run Playwright tests using npx
-                sh 'npx playwright test --project=firefox'  // You can specify browsers or configurations
+                sh 'npx playwright test --grep @PlaywrightWithJenkins'  // You can specify browsers or configurations
             }
         }
         stage('Cleanup') {
@@ -35,7 +35,9 @@ pipeline {
     post {
         always {
             // Ensure workspace is cleaned up after the tests, even if they fail
-            cleanWs()
+            node {
+                cleanWs()
+            }
         }
         success {
             echo 'Tests passed successfully!'
