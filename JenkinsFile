@@ -14,32 +14,27 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                script {
-                    // Ensure you use Node 16 or higher for Playwright
-                    sh 'npm ci'
-                }
+                // Ensure dependencies are installed using npm ci
+                sh 'npm ci'
             }
         }
         stage('Run Playwright Tests') {
             steps {
-                script {
-                    // Run Playwright tests
-                    sh 'npx playwright test --grep PlaywrightWithJenkins'  // You can specify browsers or configurations
-                }
+                // Run Playwright tests using npx
+                sh 'npx playwright test --project=firefox'  // You can specify browsers or configurations
             }
         }
         stage('Cleanup') {
             steps {
-                script {
-                    // Clean up if needed, like removing temp files
-                }
+                // Clean up after the tests, if needed
+                sh 'rm -rf node_modules'  // Example cleanup step
             }
         }
     }
 
     post {
         always {
-            // Ensure Playwright is cleaned up after the tests, even if they fail
+            // Ensure workspace is cleaned up after the tests, even if they fail
             cleanWs()
         }
         success {
