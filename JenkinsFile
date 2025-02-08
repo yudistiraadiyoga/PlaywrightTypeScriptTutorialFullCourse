@@ -36,7 +36,9 @@ pipeline {
     post {
         always {
             // Ensure workspace is cleaned up after the tests, even if they fail
-            cleanWs()
+            node {
+                cleanWs()
+            }
         }
         success {
             echo 'Tests passed successfully!'
