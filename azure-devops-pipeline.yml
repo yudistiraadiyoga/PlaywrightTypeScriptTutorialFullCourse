@@ -16,8 +16,8 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
 
-- script: npx playwright test
-  displayName: 'Run Playwright tests --grep PlaywrightWithAzureDevOpsPipeline'
+- script: npx playwright test --grep PlaywrightWithAzureDevOpsPipeline
+  displayName: 'Run Playwright tests'
   env:
     CI: 'true'
 
