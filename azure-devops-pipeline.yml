@@ -24,7 +24,6 @@ steps:
 - task: PublishTestResults@2
   displayName: 'Publish test results'
   inputs:
-    searchFolder: 'test-results'
     testResultsFormat: 'JUnit'
     testResultsFiles: 'junit-test-report.xml'
     mergeTestResults: true
