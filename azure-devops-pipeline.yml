@@ -26,7 +26,7 @@ steps:
   inputs:
     searchFolder: 'test-results'
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'e2e-junit-results.xml'
+    testResultsFiles: 'junit-test-report.xml'
     mergeTestResults: true
     failTaskOnFailedTests: true
     testRunTitle: 'My End-To-End Tests'
