@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 /**
  * Author Testers Talk
  */
-test('test', async ({ page }) => {
+test('[3] Record a test', { tag: ['@PlaywrightWithAzureDevOpsPipeline'] }, async ({ page }) => {
 
   await test.step('Navigating to URL', async () => {
     await page.goto('https://github.com/');
@@ -24,4 +24,12 @@ test('test', async ({ page }) => {
   await test.step('Validate error message', async () => {
     await expect(page.getByRole('alert')).toContainText('Incorrect username or password.');
   });
+});
+
+/**
+ * Author Testers Talk
+ */
+test('[8] Test 2 will fail', { tag: ['@PlaywrightWithAzureDevOpsPipeline'] }, async ({ page }) => {
+  await page.goto('https://www.youtube.com/@testerstalk');
+  expect(true).toBe(false);
 });
