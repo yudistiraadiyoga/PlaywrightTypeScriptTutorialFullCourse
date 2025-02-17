@@ -1,8 +1,7 @@
-name: Playwright Tests
+name: Playwright Tests - Auto Trigger
 on:
   push:
     branches: [main, master]
-  workflow_dispatch: # This enables manual triggering
 
 jobs:
   test:
