@@ -11,19 +11,19 @@
 - Playwright with TypeScript Full Course Playlist - https://youtube.com/playlist?list=PLUeDIlio4THEXmQxNvKmdDxAVloGTHXMr&feature=shared
 ===============================================================
 # Complete Playwright with JavaScript Full Course
-## [Learn Playwright with JavaScript from Scratch](https://www.youtube.com/watch?v=2poXBtifpzA)
+## [Part01 : Learn Playwright with JavaScript from Scratch](https://www.youtube.com/watch?v=2poXBtifpzA)
 [![Watch the video](https://img.youtube.com/vi/2poXBtifpzA/hqdefault.jpg)](https://www.youtube.com/watch?v=2poXBtifpzA)
 
 - Playwright with JavaScript UI Automation Full Course Playlist - https://bit.ly/playwright-tutorial-automation-testing
 ===============================================================
 
-## [Learn Playwright with API Automation Testing from Scratch](https://youtu.be/lM-lqPun9P8?feature=shared)
+## [Part02 : Learn Playwright with API Automation Testing from Scratch](https://youtu.be/lM-lqPun9P8?feature=shared)
 [![Watch the video](https://img.youtube.com/vi/lM-lqPun9P8/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8)
 
 - Playwright API Testing Crash Course Playlist - https://bit.ly/playwright-api-testing-tutorial
 ===============================================================
 
-## [Learn Playwright with Azure DevOps Pipeline](https://www.youtube.com/watch?v=Exx2M5Pz06g)
+## [Part03 : Learn Playwright with Azure DevOps Pipeline](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 [![Watch the video](https://img.youtube.com/vi/Exx2M5Pz06g/hqdefault.jpg)](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 
 - Playwright with Azure DevOps Pipeline Playlist - https://bit.ly/playwright-azure-devops-tutorial
