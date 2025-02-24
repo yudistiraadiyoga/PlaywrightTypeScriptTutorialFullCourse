@@ -1,6 +1,14 @@
 trigger:
   - main
 
+# schedules:
+#   - cron: "30 3 * * 1-5"
+#     displayName: Weekday Build Auto Trigger
+#     branches:
+#       include:
+#         - main
+#     always: true
+
 pool:
   vmImage: ubuntu-latest
 
@@ -9,6 +17,8 @@ steps:
     inputs:
       versionSpec: "18"
     displayName: "Install Node.js"
+
+  #    workingDirectory: "$(Build.SourcesDirectory)/FolderNameInAny"
 
   - script: npm ci
     displayName: "npm ci"
