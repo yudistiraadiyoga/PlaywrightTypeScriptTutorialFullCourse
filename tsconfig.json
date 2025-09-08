@@ -12,7 +12,8 @@
       "resolveJsonModule": true,       // Allow importing of JSON files
       "types": ["node", "playwright"], // Include the types for Node.js and Playwright
       "declaration": true,             // Generate .d.ts files for type declarations
-      "sourceMap": true                // Generate source maps for easier debugging
+      "sourceMap": true,                // Generate source maps for easier debugging
+      "ignoreDeprecations": "6.0"       // Silence deprecated options warning
     },
     "include": [
       "src/**/*.ts",   // Include all TypeScript files in the 'src' folder
